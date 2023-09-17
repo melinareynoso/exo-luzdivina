@@ -1,0 +1,148 @@
+#panel{
+    background: linear-gradient(#3f3045, #ffc0cb);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    
+}
+.panel-container {
+  background-color: rgba(233, 220, 220, 0.212);
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel-content h1{
+  color: #fff;
+  font-family: 'Berkshire Swash', sans-serif;
+  font-size: 3.5rem;
+  text-shadow: 0px 2px 5px rgb(0 0 0 / 30%);
+}
+
+.number {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.number h2 {
+  padding-top: 0;
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.number span {
+  font-size: 2.5rem;
+  font-family: 'Berkshire Swash', sans-serif;   
+  color: #000;
+
+}
+
+.modify-number-form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modify-number-form label {
+  color: rgb(251, 251, 251);
+  text-shadow: 0px 2px 5px rgb(0 0 0 / 30%);
+  font-size: 24px;
+  font-family: 'Berkshire Swash', sans-serif;
+  margin-bottom: 10px;
+}
+
+.modify-number-form select {
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  transition: all 0.3s ease-in-out;
+}
+
+.modify-number-form select:focus {
+  border-bottom: 2px solid #3f3045;;
+  outline: none;
+}
+
+.modify-number-form input[type="text"] {
+  margin-bottom: 0px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  transition: all 0.3s ease-in-out;
+}
+
+.modify-number-form input[type="text"]:focus {
+  border-bottom: 2px solid #3f3045;;
+  outline: none;
+}
+
+.modify-number-form button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #3f3045;;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.modify-number-form button:hover {
+  background-color: #ffffff;
+}
+
+.logout-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #5d4c92;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.logout-btn:hover {
+  background-color: #7561b1;
+}
+
+.logout-btn:active {
+  transform: translateY(1px);
+}
+
+.error-label {
+  font-family: sans-serif !important;
+  color: red !important;
+  font-size: 16px !important;
+  margin-top: 10px;
+}
+
+.succes-label {
+  font-family: sans-serif !important;
+  color: rgb(36, 101, 38) !important;
+  font-size: 16px !important;
+  margin-top: 10px;
+}

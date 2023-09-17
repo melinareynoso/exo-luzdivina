@@ -1,0 +1,104 @@
+#Testimonios{
+  padding: 50px 0;
+  width: 100%;
+  height: 100%;
+}
+
+#text-container-result {
+  background: linear-gradient(rgba(255, 33, 79, 0.95), rgba(0, 0, 0, 0.95));
+  color: white;
+  opacity: 100;
+  font-size: 150%;
+  display: inline-flex;
+  justify-content: space-around;
+  border: 2px solid #ff214f;
+  padding: 0.2rem;
+  line-height: 2;
+  border-radius: 2rem;
+  align-items: center;
+  width: 25%;
+}
+
+#text-container-result h2 {
+  padding: 1em 0.5em 1em 0.5em;
+  overflow: hidden;
+  font-size: 0.8em;
+  font-family: Proxima Nova;
+}
+
+.carousel .slide img {
+  width: 87%;
+  vertical-align: top;
+  border: 0;
+}
+
+/* .carousel .slide .legend {
+  bottom: 0px;
+  width: 50%;
+  margin-left: 0%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}  */
+
+.carousel .control-dots {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.carousel-wrapper {
+  width: 450px;
+  margin:auto;
+  margin-bottom: 3rem;
+
+}
+
+.carousel .slide {
+  /* background-color: rgba(0, 0, 0, 0.433); */
+  margin-bottom: 30px;
+}
+
+/* .carousel:hover .slide .legend {
+  opacity: 0.5;
+} */
+
+.carousel.carousel-slider .control-arrow:hover {
+  background: none;
+}
+
+
+.carousel .carousel-status {
+  display: none;
+}
+
+
+.testimonios-title{
+  padding-bottom: 1rem;
+  padding-top: 4rem;
+}
+
+.Testimonios h3{
+  padding-bottom: 1.5rem;
+  width: 90%;
+  margin: auto;
+}
+
+@media (max-width: 500px) {
+  .carousel-wrapper {
+    width: 85%;
+    margin: auto;
+  }
+
+}
+
+@media (max-width: 800px) {
+
+#text-container-result {
+  width: 50%;
+}
+
+}

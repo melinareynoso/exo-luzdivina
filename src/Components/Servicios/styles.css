@@ -1,0 +1,313 @@
+#Servicios {
+  padding-top: 90px !important;
+  height: 100%;
+  width: 100%;
+  font-family: 'Berkshire Swash', sans-serif;
+  text-align: center;
+}
+
+#subtitle{
+  font-family: 'Cinzel Decorative';
+  width: 90%;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+
+.btn_navbar{
+  background-color: #4dc247;
+  color: white;
+  opacity: 100;
+  font-size: 150%;
+  display: inline-flex;
+  justify-content: space-around;
+  border: 1px solid transparent;
+  padding: 0.2rem;
+  line-height: 2;
+  border-radius: 2rem;
+  align-items: center; 
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.btn_navbar:hover{
+  color: #4dc247;
+  background-color:white;
+  }
+
+#tarot {
+  padding-bottom: 40px;
+  width:90%;
+  margin:auto;
+}
+
+#tyctarot{
+  font-family: "Proxima Nova";
+  font-size: 0.7rem;
+  width: 90%;
+  margin: auto;
+}
+
+#titulo-serv{
+  width: 90%;
+  padding: 40px 0 20px 0;
+  margin: auto;
+}
+
+#container-btns{
+  display: flex;
+}
+
+
+#btn-price{
+  width: 50%;
+  margin: 0;
+}
+
+#numcall{
+  padding-left: 10px;
+  margin-block: 0;
+  font-size: 1.3rem;
+}
+
+.btn-call{
+  font-family: 'Berkshire Swash', sans-serif;
+  font-size: 25px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px;
+  border-radius: 50px;
+  transition: all ease-in-out 0.3s;
+  line-height: 1;
+  margin: 10px;
+  color: #fff;
+  border: 2px solid #fff;
+  align-items: center; 
+  background-color: #ff214f;
+  text-decoration: none;
+}
+
+.btn-call:hover{
+  background: none;
+  }
+
+#btn-calltel,
+#btn-callvisa{
+  display:flex;
+  justify-content: center;
+}
+
+#p-tarot{
+  font-family: "Cinzel Decorative";
+  color: white;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgb(0,0,0,0.5)), url(./tarot.jpg);
+  border-radius: 40px;
+  margin: 2% 5%;
+  padding: 90px 30px;
+  border: 2px solid #ddd;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+  object-fit: cover;
+  background-position: center;
+  font-size: 1.1rem;
+}
+
+#price{
+  font-family: "Proxima Nova";
+  font-size: 0.8rem;
+}
+
+
+
+.img-container{
+  height: 60%;
+  display: flex;
+  width: 100%;
+
+}
+
+.card-container {
+  width: 95%;
+  height: 70vh;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  position: relative;
+width: 23%;
+height: 95%;
+margin: 0 10px;
+border-radius: 30px;
+perspective: 1000px;
+cursor: pointer;
+margin: auto;
+}
+
+.card .front,
+.card .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: transform 0.6s ease-in-out;
+} 
+
+.card .front {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: none;
+  border: 1px solid #ddd;
+  border-radius: 10%;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+  background: linear-gradient(#3f3045, black);
+
+}
+
+.card .front img {
+  border-radius: 100%;
+margin: auto;
+max-height: 190px;
+max-width: 190px;
+height: 100%;
+width: 100%;
+border: 2px solid #ddd;
+box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+object-fit: cover;
+
+}
+
+.card .front h2 {
+  width: 90%;
+  padding-bottom: 0rem;
+  padding-top: 0rem;
+  font-size: 1.8em;
+  margin: auto;
+  color: white;
+}
+
+.card .back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: none;
+  border: 1px solid #ddd;
+  border-radius: 10%;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+  background: linear-gradient(#3f3045, black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(-180deg);
+}
+
+.card.flipped .front {
+  transform: rotateY(180deg);
+}
+
+.card.flipped .back {
+  transform: rotateY(0);
+}
+
+.card .back p {
+  font-family: 'Cinzel Decorative';
+font-size: 13px;
+margin: 5px;
+padding: 5px;
+text-align: justify;
+color: white;
+}
+
+
+
+#text-container{
+  background: linear-gradient(rgba(255, 33, 79, 0.95), rgba(0, 0, 0, 0.95));
+  color: white;
+  opacity: 100;
+  font-size: 150%;
+  display: inline-flex;
+  justify-content: space-around;
+  border: 2px solid #ff214f;
+  padding: 0.2rem;
+  line-height: 2;
+  border-radius: 2rem;
+  align-items: center;
+  width: 45%;
+}
+
+#text-container h2 {
+  padding: 1em 0.5em 1em 0.5em;
+  overflow: hidden;
+  font-size: 1em;
+  font-family: Proxima Nova;
+}
+
+
+@media (min-width: 900px) and (max-width: 1200px) {
+
+  .card-container {
+    width: 90%;
+    height: 150vh;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  #text-container{
+    width: 60%;
+  }
+}
+
+@media (max-width: 900px) {
+  .card-container {
+    flex-direction: column;
+    display: flex;
+    height: 280vh;
+    align-items: center;
+  }
+
+  .card {
+    margin: 10px 0;
+    width: 90%;
+  }
+
+  #text-container{
+  width: 80%;
+  margin: 5% 0;
+  }
+
+  #p-tarot{
+    padding: 50px 40px;
+  }
+
+}
+
+@media (max-width: 900px) {
+  #container-btns{
+    display: block;
+  }
+
+  #btn-price{
+    margin: auto;
+    width: 100%;
+  }
+
+  #price{
+    padding-bottom:10px;
+  }
+
+}
