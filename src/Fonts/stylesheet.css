@@ -5,3 +5,11 @@
         url('ProximaNovaRg.otf');
     font-weight: 400;
 }
+
+@font-face {
+    font-family: 'Brown Sugar';
+    src: local('Brown Sugar'),
+        local('Brown Sugar'),
+        url('BrownSugar.otf');
+    font-weight: 400;
+}

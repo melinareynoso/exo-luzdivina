@@ -1,59 +1,57 @@
 import { useState } from "react";
 import "./styles.css"; // archivo CSS con estilos para las tarjetas
 
-import {
-  BsFillCreditCard2BackFill,
-  BsFillTelephoneForwardFill,
-} from "react-icons/bs";
-import { FaWhatsapp } from "react-icons/fa";
-import { useSelector } from "react-redux";
 
-import ancianos from "./ancianos.jpg";
-import endulza from "./endulza.jpg";
-import retorno from "./retorno.jpg";
-import sexual from "./sexual.jpg";
+// import { useSelector } from "react-redux";
+
+// import ancianos from "./ancianos.jpg";
+// import endulza from "./endulza.jpg";
+// import retorno from "./retorno.jpg";
+// import sexual from "./sexual.jpg";
 
 const cardsData = [
   {
     id: 1,
-    title: "Amarres de amor para toda la vida",
-    imageSrc: ancianos, // Aquí puedes cambiar la URL de la imagen
+    title: "Ritual para la abundancia",
+    // imageSrc: ancianos, // Aquí puedes cambiar la URL de la imagen
     description:
-      "El terreno del amor es uno de los temas predilectos de nuestros consultantes y estos hechizos son la solución perfecta para conseguir el amor. Nuestro videntes que nacieron con el don de la clarividencia están deseando brindarte su ayuda para que tengas una vida amorosa larga y plena. Los amarres de amor tratan de solucionar problemas amorosos y proporcionarte la felicidad que tanto ansías. Nuestros videntes están disponibles las 24 horas del día para atenderte personalmente; así podrás contactar con ellos en cualquier momento y confiarles lo que tanto te preocupa.",
+      "Este ritual se hace a la primera hora del día, ni bien te levantás. Vas a tener que llenar 3/4 partes de un vaso con agua y diluir en él una cucharada de azúcar. Luego hay que ponerlo al lado de una vela dorada (también puede ser amarilla). Luego, en un papel de color amarillo escribimos todo lo que deseamos lograr en el terreno económico y detallamos todos esos proyectos que tenemos en mente y con los que deseamos ganar dinero. Cuando estés segura de haber dejado todo lo que deseas por escrito, doblás el papel en cuatro partes y lo colocás debajo del vaso. En ese momento hay que poner una cucharada más de azúcar al agua y prender la vela. Cuando estés listo, cerrá los ojos y visualizate logrando todo lo que escribiste sin ningún tipo de esfuerzo. Tomate el tiempo que necesites y luego, dí en voz alta: Lo lograré. El dinero y la abundancia vendrán a mí. Gracias, gracias, gracias. ​Es importante repetir el ritual durante tres días seguidos. Cuando se apaga la tercera vela, se desecha el agua con azúcar y se quema el papel.",
   },
   {
     id: 2,
-    title: "Retorno de parejas",
-    imageSrc: retorno,
+    title: "Ritual de limpieza",
+    // imageSrc: retorno,
     description:
-      "A veces un solo error puede transformar tu vida en un abismo y tu felicidad en sufrimiento, te despiertas todas las mañanas arrepintiéndote de esa equivocación y que ese día nunca hubiera sucedido. Tus noches se convierten en pesadillas y te desvelas pensando que tu ser amado se ha alejado y nunca más regresará o volverá a ser el mismo. Este poderoso ritual revive la llama del amor y crea lazos tan fuertes que tu pareja regresara rendida a tus pies y totalmente enamorada y arrepentida.",
+    "¿Qué necesitas?    Un recipiente.    Agua limpia.    Vinagre blanco y sal.    ¿Qué debes hacer?    Debes mezclar todos los ingredientes en el recipiente y usar esta mezcla para tu limpieza normal. Si tus pisos son de madera o de parqué y no puedes usar agua normal, puedes usarla para tu puerta de entrada, tus ventanas y el resto de tus muebles. Recuerda que esta mezcla también purifica la energía y los espacios, por lo que es importante que todos tus muebles también sean aseados. Los rituales de limpieza energética deben hacerse cada mes para asegurarse que en casa no se acumule la mala energía, si esto sucede empezarás a sentirte cansada y sin motivación, es mejor prevenir y liberar nuestro ambiente, es el mejor consejo para un hogar equilibrado."
   },
   {
     id: 3,
-    title: "Amarres sexuales",
-    imageSrc: sexual,
+    title: "Limpieza con sahumos",
+    // imageSrc: sexual,
     description:
-      "Es un conjunto de rituales que se realiza por medio de Magia Blanca. Se utiliza para lograr la unión sexual con otra persona de cualquier sexo, con quienes han tenido una relación de amistad o conocidos (por ejemplo, compañeros de trabajo) pero no han logrado pasar mas allá de eso. Se redirige el deseo sexual de la otra persona hacia quien está realizando el amarre. Recuerdo que un trabajo así es delicado y si se deja en manos inexpertas puede tener efectos totalmente contrarios a los deseados.",
+      "Esta limpieza o ritual es ideal para descargar y aliviar los entornos en los que nos movemos, especialmente nuestro hogar. Sucede que el humo es sinónimo de purificación, de limpieza y de renovación espiritual.    ¿Cómo se hace? Si es posible, lo mejor es hacerlo en una sahumadora o un cuenco de barro.      A la hora de elegir qué quemar, podemos optar por sándalo (liberación de ataduras), lavanda (relajación), canela (dulcificación de procesos), mirra (renueva la energía y brinda paz), incienso (limpia y abre caminos) y palo santo (equilibra).      Se cierran las ventanas de la casa y la puerta del baño, y se abren los placares. Se prende un carbón vegetal al aire libre o cerca de una ventana, ya que el primer humo que libera es tóxico. Luego, se agregan las hierbas que deseamos.  Recorremos cada ambiente (menos el baño) desde el punto más alejado hasta la puerta de entrada, girando el recipiente en contra de las agujas del reloj. Es muy importante detenernos en los rincones. Cuando terminamos, se cierran los placares y se abren las ventanas. Es conveniente cambiarnos y lavar la ropa con la que hicimos el sahumo.",
   },
   {
     id: 4,
-    title: "Endulzamientos",
-    imageSrc: endulza,
+    title: "Rituales con sal para eliminar la mala energia",
+    // imageSrc: endulza,
     description:
-      "Los endulzamientos parece que busque los mismos objetivos que un amarre, es decir, recuperar a una pareja o evitar que alguien se distancie. Pero su mecanismo es distinto. EN el caso de estos hechizos de amor, lo que se intenta es potenciar los sentimientos positivos de la relacion o de una persona, así como alejar todos los sentimiento negativos. Por esta razóin se considera que el endulzamiento siempre lo que ofrece es algo bueno.",
-  },
+    "Cómo usarla para protegerte: Elemento mágico y cargado de significados esotéricos, ayuda a limpiar la negatividad. Rituales para emplearla en nuestro beneficio.    La sal, es una buena conductora de la energía positiva, lo que permite atraer las buenas ondas y favorece el rechazo de todo lo negativo. Dueña de propiedades mágicas y purificadora al máximo, ya su sola presencia pone una barrera contra el mal de ojo, la envidia y los trabajos de magia negra. -Para purificarnos:  En este caso, se trata de un baño de sal muy sencillo. Primero, se disuelve un puñado de sal gruesa en un recipiente de agua tibia. Una vez que terminamos de ducharnos, nos volcamos el agua con sal desde el cuello hacia abajo, por delante y por detrás, que el agua nos cubra el pecho y la espalda. No nos enjuagamos.    -Para evitar el Mal de Ojo:   Debajo de la cabecera de la cama se coloca un vaso de agua con sal gruesa. Si es exactamente debajo de donde se apoya la cabeza al dormir, mejor. Se deja el recipiente durante 7 días, se puede ir agregando sal para que haya una buena cantidad, y el último día se tira el contenido por el desagüe, en una maceta o en un lugar con tierra que lo neutralice.",  
+    // -Para proteger el hogar: Se coloca un puñado de sal gruesa en cada rincón de la casa y detrás de la puerta principal de ingreso. Luego, se barre toda esa sal desde el interior hacia la puerta.  Cuando toda la sal se encuentra en la puerta de entrada, hay que juntarla y tirarla en una maceta o lugar con tierra.   -Contra la envidia: En el caso de sentirnos envidiados o de que haya gente que nos pone trabas, se debe tomar una foto propia y rodearla de sal gruesa. Cada día durante toda una semana hay que sumar algunos granos de sal para fortalecer la protección.  Cuando pasan los 7 días, esa sal se tira en tierra o por un desagüe y la foto se guarda en un cajón con cosas personales
+   },
 ];
 
-function Card({ id, title, imageSrc, description, isFlipped, handleFlip }) {
+//borre "imageSrc" de la linea 44
+function Card({ id, title, description, isFlipped, handleFlip }) {
   return (
     <div
       className={`card ${isFlipped ? "flipped" : ""}`}
       onClick={() => handleFlip(id)}
     >
       <div className="front">
-        <picture className="img-container">
+        {/* <picture className="img-container">
           <img src={imageSrc} alt={title} />
-        </picture>
+        </picture> */}
         <h2>{title}</h2>
       </div>
       <div className="back">
@@ -64,7 +62,7 @@ function Card({ id, title, imageSrc, description, isFlipped, handleFlip }) {
 }
 
 function Services() {
-  const Numbers = useSelector((state) => state.numbers);
+  // const Numbers = useSelector((state) => state.numbers);
 
   const [flippedCards, setFlippedCards] = useState([]);
 
@@ -77,86 +75,16 @@ function Services() {
   };
 
   return (
-    <>
-      <section id="tarot">
-        <h2 id="titulo-serv">Servicio de TAROT</h2>
-        <p id="p-tarot">
-          Descubre lo que el futuro tiene reservado para ti a través de una
-          experiencia de tarot online única.<br></br>
-          Conecta con nuestro equipo de expertos que te guiarán a través de las
-          cartas para brindarte claridad y orientación. <br></br>
-          Nuestro servicio de tarot online te ofrece respuestas a tus preguntas
-          más importantes sobre el amor, la carrera, las relaciones y mucho más.
-          Experimenta la magia del tarot desde la comodidad de tu hogar y obtén
-          perspectivas valiosas para tomar decisiones informadas. <br></br>
-          Tu camino hacia el conocimiento y la introspección comienza aquí.
-          <br></br>
-          <br></br>
-          <div id="container-btns">
 
-
-            <div id="btn-price">
-            <a
-              className="btn-call"
-              href="https://tpvseguro.premiumnumbers.es/servicios/tpv/saldo/llamante/seguro/463/1082977/c777d0b26c9b22f967acfc0df16205bd88047700"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <div id="btn-callvisa">
-                <BsFillCreditCard2BackFill />
-                <h6 id="numcall">919991727</h6>
-              </div>
-            </a>
-            <p id="price">*BONO VISA: 15min 13€/<br></br>
-            30 min 22€/60min 41€.</p>
-            </div>
-
-
-            <div id="btn-price">
-            <a
-              className="btn-call"
-              href="tel: 806499570"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <div id="btn-calltel">
-                <BsFillTelephoneForwardFill />
-                <h6 id="numcall">806499570 *</h6>
-              </div>
-            </a>
-             {/* <p id="price">(*)</p> */}
-            </div>
-
-          </div>
-        </p>
-        {/* <p id="tyctarot">
-          *El precio máximo por minuto de esta llamada es de 1,21 euros si llama
-          desde un teléfono fijo y de 1,57 euros si llamas desde un teléfono
-          móvil, impuestos incluídos. Servicio de tarot prestado por SMTM
-          Sociedad Por Acciones Simplificada SAS, apartado de correos 164, CP
-          46002, Valencia. Solo para mayores de 18 años.
-        </p> */}
-      </section>
 
       <section id="masservicios">
-        <h2 id="titulo-serv">Más servicios</h2>
-        <h3 id="subtitle">
+        <h2 id="titulo-serv">Servicios gratuitos</h2>
+        {/* <h3 id="subtitle">
           Además contamos con servicios relacionados a la formación de vínculos
           sentimentales, acá te muestro algunos de los casos en los que te
           podemos ayudar.
-        </h3>
-        <a
-          className="btn_navbar"
-          onclick={
-            "return gtag_report_conversion('https://api.whatsapp.com/send?phone=' + Numbers);"
-          }
-          href={`https://api.whatsapp.com/send?phone=${Numbers}`}
-          rel="noreferrer"
-          target="_blank"
-        >
-          <FaWhatsapp id="whatsapp-icon" />
-          <h6 id="contact">CONOCE MÁS</h6>
-        </a>
+        </h3> */}
+        
         <div className="card-container">
           {cardsData.map((card) => (
             <Card
@@ -170,11 +98,10 @@ function Services() {
             />
           ))}
         </div>
-        <div id="text-container">
-          <h2>SERVICIO EXCLUSIVO PARA MAYORES DE 18 AÑOS</h2>
-        </div>
+        
+
       </section>
-    </>
+
   );
 }
 

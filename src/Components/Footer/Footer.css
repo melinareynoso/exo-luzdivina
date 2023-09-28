@@ -1,6 +1,6 @@
 #tyc{
-    background-color: rgba(255, 255, 255, 0);
-    font-family: 'Cinzel Decorative';
+    background-color: rgb(240 233 193);
+    font-family: 'Visby';
     color: #FFF;
     border: none;
     cursor: pointer;
@@ -12,7 +12,7 @@
 }
 
 #tyctarot {
-    font-family: 'Cinzel Decorative';
+    font-family: 'Visby';
     font-size: 0.5rem;
     width: 90%;
     margin: auto;
@@ -22,7 +22,7 @@
 
 .modal-body p{
     color:#FFF;
-    font-size: 0.7em;
+    font-size: 0.5rem;
     }
 
 
@@ -33,33 +33,30 @@ color:#FFF;
 
 
 #close-modal {
-    background-color: #3f3045;
-    color: #FFF;
+    background-color: rgb(211, 194, 98);
+    color: rgb(0, 0, 70);
     border: 2px solid white;
-
-    font-family: Cinzel Decorative;
+    font-family: Visby;
     padding: 0.6em;
     border-radius: 50px;
     cursor: pointer;
-
 }
 
 #close-modal:hover {
     background-color: #FFF;
-    color: #3f3045;
+    color: rgb(0, 0, 70);
     border: 2px solid transparent;
 }
 
 
 
 footer {
-    background-color: #3f3045;
+    background-color: rgb(240 233 193);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    position: absolute;
 }
 
 .modal {
@@ -131,12 +128,12 @@ footer {
     flex-direction: column;
     width: 100%;
     pointer-events: auto;
-    background-color: #3f3045;
+    background-color: rgb(240 233 193);
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 1rem;
     outline: 0;
-    font-family: Cinzel Decorative;
+    font-family:  Visby;
 }
 
 .modal-backdrop {

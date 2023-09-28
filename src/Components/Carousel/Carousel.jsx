@@ -10,12 +10,10 @@ import image4 from "./images/image4.jpg";
 export default function carousel() {
   return (
     <section className="Testimonios" id="Testimonios">
-      <div id="text-container-result">
-        <h2>PAGÁ AL VER RESULTADOS</h2>
-      </div>
 
       <h2 className="testimonios-title">Testimonios</h2>
-      <h3>Conocé los testimonios de quienes ya nos eligieron.</h3>
+      <h3>Los servicios de Luz Divina son altamente valorados por su precisión y su capacidad 
+      para ayudar a las personas a tomar decisiones informadas y positivas. </h3>
 
       <div className="carousel-wrapper">
         <Carousel showThumbs={false}>

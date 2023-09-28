@@ -1,9 +1,9 @@
 body {
-  font-family: 'Berkshire Swash', cursive;
+  font-family: 'Brown Sugar', cursive;
   font-family: 'Cinzel Decorative';
   font-family: "Proxima Nova";
-  color: #f8f9fa;
-  background: linear-gradient(#3f3045, #ffc0cb);
+  color: rgb(0, 0, 70);
+  /* background: linear-gradient(#3f3045, #ffc0cb); */
   box-sizing: border-box;
 }
 

@@ -2,15 +2,20 @@
   padding-top: 90px !important;
   height: 100%;
   width: 100%;
-  font-family: 'Berkshire Swash', sans-serif;
+  font-family: 'Brown Sugar', sans-serif;
   text-align: center;
 }
 
+a{
+  text-decoration: none;
+  color: rgb(0, 0, 70);
+}
+
 #subtitle{
-  font-family: 'Cinzel Decorative';
+  font-family: 'Visby';
   width: 90%;
   margin: auto;
-  padding-bottom: 20px;
+  padding: 10px 0;
 }
 
 
@@ -62,6 +67,7 @@
 #btn-price{
   width: 50%;
   margin: 0;
+  text-shadow: none;
 }
 
 #numcall{
@@ -71,7 +77,7 @@
 }
 
 .btn-call{
-  font-family: 'Berkshire Swash', sans-serif;
+  font-family: 'Brown Sugar', sans-serif;
   font-size: 25px;
   letter-spacing: 1px;
   display: inline-block;
@@ -83,7 +89,7 @@
   color: #fff;
   border: 2px solid #fff;
   align-items: center; 
-  background-color: #ff214f;
+  background-color: rgb(0, 0, 70);
   text-decoration: none;
 }
 
@@ -95,13 +101,15 @@
 #btn-callvisa{
   display:flex;
   justify-content: center;
+  text-shadow: none;
 }
 
 #p-tarot{
-  font-family: "Cinzel Decorative";
-  color: white;
+  font-family: "Visby";
+  color: rgb(255, 255, 255);
+  border-color: #3f3045 2px;
   background-size: cover;
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgb(0,0,0,0.5)), url(./tarot.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(./tarot.jpg);
   border-radius: 40px;
   margin: 2% 5%;
   padding: 90px 30px;
@@ -110,6 +118,8 @@
   object-fit: cover;
   background-position: center;
   font-size: 1.1rem;
+  text-shadow: 0px 2px 3px rgb(0 0 0);
+  font-weight: bold;
 }
 
 #price{
@@ -163,7 +173,7 @@ margin: auto;
   border: 1px solid #ddd;
   border-radius: 10%;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
-  background: linear-gradient(#3f3045, black);
+  background: linear-gradient(rgb(240 233 193), rgba(255, 255, 255));
 
 }
 
@@ -186,7 +196,7 @@ object-fit: cover;
   padding-top: 0rem;
   font-size: 1.8em;
   margin: auto;
-  color: white;
+  color: rgb(0, 0, 70);
 }
 
 .card .back {
@@ -198,11 +208,12 @@ object-fit: cover;
   border: 1px solid #ddd;
   border-radius: 10%;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
-  background: linear-gradient(#3f3045, black);
+  background: linear-gradient(rgb(240 233 193), rgba(255, 255, 255));
   display: flex;
   justify-content: center;
   align-items: center;
   transform: rotateY(-180deg);
+  
 }
 
 .card.flipped .front {
@@ -214,12 +225,12 @@ object-fit: cover;
 }
 
 .card .back p {
-  font-family: 'Cinzel Decorative';
+  font-family: 'Visby';
 font-size: 13px;
 margin: 5px;
 padding: 5px;
 text-align: justify;
-color: white;
+color: rgb(0, 0, 70);
 }
 
 
